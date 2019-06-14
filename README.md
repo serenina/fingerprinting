@@ -1,0 +1,3 @@
+# Fingerprinting
+
+File extension recognition
