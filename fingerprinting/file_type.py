@@ -27,7 +27,7 @@ def file_fingerprinting(path):
             first_bytes = f.read(100)
             for key in signatures.keys():
                 if key in str(first_bytes):
-                    logger.log(logging.INFO, f'File extension: {signatures[key]}')
+                    click.echo(f'File extension: {signatures[key]}')
                 else:
                     continue
             return None
